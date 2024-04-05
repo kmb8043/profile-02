@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  
+  header {
+    width: 100%;
+    padding: 15px 6% 15px 0;
+  }
+  
+  nav {
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header h1 {
+    padding: 5px 1%;
+    font-size: 50px;
+  }
+  
+  nav ul li {
+    display: inline-block;  
+    list-style: none;
+    margin: 10px 20px;
+  }
+  
+  nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 25px;
+    position: relative;
+  }
+  
+  nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #00c8ffab;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+  }
+  
+  nav ul li a:hover::after {
+      width: 100%;
+  } 
+  
+  
+  
+  main p {
+    font-size: 22px;
+    padding-left: 12vw;
+    font-weight: 200;
+  }
+  
+  
+  .banner {
+    background: rgb(96, 126, 174);
+    min-height: 10vh;
+    padding: 2%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .banner h2 {
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 30px;
+    line-height: 1.2;
+  }
+  
+  .content {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .sections {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .sections > h2 {
+    text-align: right;
+    padding-right: 15px;
+    font-size: 45px;
+  }
+  
+   .sections img{
+    border: 1px solid;
+    border-radius: 9px;
+    padding: 5px;
+    width: 300px;
+   }
+  
+  .sections p {
+    margin-bottom: 20px;
+  }
+  
+  
+  /* project */
+  .container {
+    display: flex;
+    min-height: 21%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .cards {
+    border: 5px solid #00c8ffab;
+    min-height: 20vh;
+    max-height: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,8fr)) ;
+    margin: 15px;
+    background-blend-mode: multiply; 
+    background-size: 100%;
+    transition: all 1s;
+  }
+  
+  .cards:hover {
+    background-color: rgba(10,94,103,0.5);
+  }
+  
+  
+  .code{
+    display:table-row;
+    background-color: aliceblue;
+    color: rgb(69, 54, 31);
+    font-size: 12px;
+    opacity: 0.6;
+  }
+
+  .cards h3{
+    display: inline-flex;
+    color: rgb(91, 72, 43);
+    background-color: aliceblue;
+    opacity: 0.6;
+    font-weight: 900;
+  }
+  
+  /* the main card is bigger */
+  .cards:first-child {
+      min-height: 250px;
+      flex-basis: 50%;
+      background-position: center;
+  }
+  
+  
+  
+  /* contact me */
+  .contactme address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+  }
+  
+  .contactme address a {
+    text-decoration: none;
+    font-size: 25px;
+    color:black;
+    font-weight: 500;
+  }
+  
+  
+  
+  /* images for the projects */
+  
+  .led {
+    background-image: url("https://images.unsplash.com/photo-1545164415-0fae860defbd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+   
+  }
+  
+  .surf {
+    background-image: url("https://images.unsplash.com/photo-1486869801134-25b6bc85fc0d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  
+  }
+  
+  .calculator {
+    background-image: url("https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  }
+  
+  .run {
+    background-image: url("https://images.unsplash.com/photo-1456613820599-bfe244172af5?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  
+  }
+  .puzzle {
+    background-image: url("https://images.unsplash.com/photo-1591040092219-081fb773589c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  
+  }
+  
+  
